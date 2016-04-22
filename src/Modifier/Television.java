@@ -2,7 +2,9 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package source;
+package Modifier;
+
+import source.Controllable;
 
 /**
  * Abstract class cannot be instantiated, used for modeling the common features

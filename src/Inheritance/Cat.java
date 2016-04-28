@@ -1,7 +1,7 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * hiding fields; if
+ * 
+ * 
  */
 package Inheritance;
 
@@ -15,6 +15,20 @@ public class Cat extends Animal {
     //the class method in the super class, will be hidden here. 
     public static int ClassFld = 20; //hiding a class flied is not recommended, for it is code reading reason. 
 
+    int x = 20;
+    static int y = 30;
+    protected int c = 50;
+    private int z;
+
+    public Cat() {
+        this("cat");  //must at first line of constructor
+        System.out.println("Cat constructor");
+    }
+
+    public Cat(String species) {
+        super(species); // the same must be at the first line of constructor. 
+    }
+
     public static void testClassMethod() {
         System.out.println("static method from cat");
     }
@@ -27,10 +41,12 @@ public class Cat extends Animal {
         System.out.println("cat flds " + Cat.ClassFld);//20
     }
 
-    //instance method can be overriden explicitly. 
     @Override
     public void testInstanceMethod() {
         System.out.println("instance method from cat");
     }
+    
+
+
 
 }

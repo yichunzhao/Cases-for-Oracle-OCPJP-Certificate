@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Collec;
+package CollectionFun;
 
 import java.util.*;
 import java.util.Collections;
@@ -23,7 +23,7 @@ public class UseCollectFw {
         
         List<String> colors = Arrays.asList("red","green","blue");
 
-        List list = new ArrayList();
+        List list = new ArrayList(); //by default initial capacity = 10; 
         Set<Integer> set = new HashSet(); //non-sorted set; set is not allowed duplicated elements
         Set<Integer> set1 = new HashSet((int) 0.2);
         SortedSet<Integer> set2 = new TreeSet();//sorted set. 

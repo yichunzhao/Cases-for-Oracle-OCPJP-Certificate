@@ -4,8 +4,6 @@
  */
 package Modifier;
 
-import source.Controllable;
-
 /**
  * Abstract class cannot be instantiated, used for modeling the common features
  * among a group of similar matters. mainly reusing the common code.
@@ -13,19 +11,35 @@ import source.Controllable;
  * @author YNZ
  */
 public abstract class Television implements Controllable {
-    protected Integer channel;
-    protected Float screenSize;
-    protected Float voltage;
 
-    public Television() {
-    }
+    protected short channel;
+    protected short screenSize;
+    protected short voice;
+    protected boolean on;
+    protected String brand;
 
-    public Television(Integer channel, Float screenSize) {
-        this.channel = channel;
+    public Television(short screenSize) {
         this.screenSize = screenSize;
     }
 
-    public Television(Integer ch) {
-        this.channel = ch;
+    @Override
+    public void setUp(short up) {
+        voice += up;
     }
+
+    @Override
+    public void setDown(short down) {
+        voice -= down;
+    }
+
+    @Override
+    public void turnOn(boolean on) {
+        this.on = on;
+    }
+
+    @Override
+    public void setCh(short ch) {
+        channel = ch;
+    }
+
 }

@@ -7,7 +7,7 @@ package Generic;
 
 import Inheritance.Animal;
 import Inheritance.Cat;
-import Collec.Apple;
+import CollectionFun.Apple;
 
 /**
  *

@@ -5,7 +5,7 @@
  */
 package Generic;
 
-import Collec.Apple;
+import CollectionFun.Apple;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;

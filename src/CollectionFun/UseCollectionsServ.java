@@ -1,7 +1,7 @@
 /*
  * java.util.collection
  */
-package Collec;
+package CollectionFun;
 
 import java.util.ArrayList;
 import java.util.Collections;

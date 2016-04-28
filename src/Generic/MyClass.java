@@ -5,7 +5,7 @@
  */
 package Generic;
 
-import Collec.Apple;
+import CollectionFun.Apple;
 
 /**
  *

@@ -3,19 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package source;
+package Enum;
 
 /**
  *
  * @author YNZ
  */
-public class User {
-
-    private Controllable tv;
-
-   
-    public void setTv(Controllable tv) {
-        tv.setEight();
-    }
-
+public enum Direction {
+    EAST,SOUTH,WEST,NORTH;
 }

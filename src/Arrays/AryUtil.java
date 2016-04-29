@@ -26,10 +26,10 @@ public class AryUtil {
         for (Iterator iterator = list.iterator(); iterator.hasNext();) {
             System.out.println("iterator.next()" + iterator.next());
         }
-        
+
         Iterator it = list.iterator();
-        while(it.hasNext()){
-            System.out.println("iternator.next()"+it.next());
+        while (it.hasNext()) {
+            System.out.println("iternator.next()" + it.next());
         }
 
         System.out.println("r =" + Arrays.binarySearch(strs, "st3")); //also can setup (start end) index

@@ -1,12 +1,9 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * String is immutable. once the string object created then it cannot be modified.
+ * immutable doesn't mean it because String is a final class. it is not the same thing. 
+ * 
  */
 package String;
-
-import java.util.Calendar;
-import java.util.GregorianCalendar;
 
 /**
  *
@@ -24,17 +21,13 @@ public class Immutable {
         //result shows Wenqi Huang; so it is not immutable. 
         System.out.println("this student = " + student.getFirstName() + " " + student.getLastName());
 
-        String str = "who am I?";
-        String str1 = str;
-        if (str == str1) {
-            System.out.println("we are same" + str);
-        }
-        str = "I am not alone.";
-        System.out.println(str);
-        System.out.println(str1);
-        
-        Calendar calendar = new GregorianCalendar();
-        System.out.println(calendar.getTime());
-        
+        String str1 = "Netto emtrup 1234";
+        System.out.println(str1.contains("Netto"));
+
+        String str2 = "Hello";
+        String str3 = str2.replace('H', 'x');
+        System.out.println(str2==str3); //creating a new String instance
+        System.out.println(str3);
+
     }
 }

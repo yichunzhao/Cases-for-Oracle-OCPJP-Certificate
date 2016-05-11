@@ -13,7 +13,7 @@ import java.util.HashMap;
  */
 public class CountOccurrenceOfWords {
 
-    public static void main(String[] args) {
+    public static void main(String... args) {
         String text = "Have a good day. Have a good class. Have a good visit. have fun!";
         HashMap<String, Integer> hashMap = new HashMap();
 

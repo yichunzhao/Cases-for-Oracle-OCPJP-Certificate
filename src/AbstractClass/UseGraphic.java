@@ -17,12 +17,15 @@ public class UseGraphic {
     public static void main(String[] args) {
         System.out.println("number of isntances " + Circle.numberofInstance);
         Graphic circle = new Circle(2, 3, 3.4f);
+        
         System.out.println("number of isntances " + Circle.numberofInstance);
         Graphic circle1 = new Circle(3, 4, 3.4f);
         System.out.println("number of instances " + Circle.numberofInstance);
         circle.draw();
         circle1.draw();
         
+        Double d1 = new Double(12);
+        System.out.println(d1.equals(d1));
 
     }
 

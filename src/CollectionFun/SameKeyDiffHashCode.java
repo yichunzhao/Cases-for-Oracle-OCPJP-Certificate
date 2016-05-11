@@ -49,6 +49,11 @@ public class SameKeyDiffHashCode {
         map0.put(9d, "this is two");
         map0.put(8d, "hellow world");
         map0.put(7d, "we are here!");
+        //map0.put(null, "we are here!");
+        //map0.put(null, "we are here!");
+        //map0.put(17d, null);
+        map0.put(17d, "null");
+        
         
         Set<Number> keys_ = map0.keySet();
         System.out.println(keys_);

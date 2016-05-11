@@ -3,26 +3,26 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Oper;
+package PrecisionLoss;
 
 /**
  *
  * @author YNZ
  */
-public class Impl {
+public class Loss {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        int i=10;
-        int n=i++%5;
-        //eveluate i first. 
-        System.out.println(n);
-        System.out.println("i="+i); //i++ evaluate i's orignal value; afterwards, i = i+1
-        
-        
+        int a = 1234567890;
+        //if you asssingn a integer to float
+        float b = a;
+        System.out.println("b=" + b);
+        System.out.println("(int)b=" + (int) b);
+        //float record 9 significant digit after decimal
+
+        System.out.println(a - (int) b);
     }
-    
+
 }

@@ -9,20 +9,25 @@ package Oper;
  *
  * @author YNZ
  */
-public class Impl {
+public class Watchout {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        int i=10;
-        int n=i++%5;
-        //eveluate i first. 
-        System.out.println(n);
-        System.out.println("i="+i); //i++ evaluate i's orignal value; afterwards, i = i+1
-        
-        
+        int k = 0;
+        int m = 0;
+        for (int i = 0; i <= 3; i++) {
+            k++;
+            if (i == 2) {
+                i=m++;
+                System.out.println("i="+i);
+                System.out.println("m="+m);
+
+            }
+            m++;
+        }
+        System.out.println(k + ", " + m);
     }
-    
+
 }

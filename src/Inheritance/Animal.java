@@ -13,6 +13,7 @@ public class Animal implements Countable{
     public static int ClassFld = 10;
     
     private String species;
+    public int size =100;
     
     int x = 20;
     static int y = 30;

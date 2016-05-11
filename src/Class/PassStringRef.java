@@ -17,10 +17,19 @@ public class PassStringRef {
         s = "Good bye world";
     }
 
+    public static void setToNull(String pstr) {
+        pstr = null;
+    }
+
+    public static void setThisNull() {
+        setToNull(str);
+    }
+
     public static void main(String[] args) {
         changeIt(str);
         System.out.println(str);
+        setThisNull();
+        System.out.println(str);
     }
-
 
 }

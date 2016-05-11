@@ -15,5 +15,15 @@ public class InvokeSuperNonArguConstuctor {
      */
     public static void main(String[] args) {
         Cat cat = new Cat();
+        
+        System.out.println(((Animal)cat).size);
+        //System.out.println(cat.size); shadow fields by the subclass, using the same identifier.
+        System.out.println(""+cat.x);  
+        
+        
+        
+        
+        if( cat instanceof Flyer) System.out.println("cat is a flyer");
+        if( cat instanceof Animal) System.out.println("cat is an animal");
     }
 }

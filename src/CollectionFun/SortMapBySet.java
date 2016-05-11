@@ -29,8 +29,9 @@ public class SortMapBySet {
         map.put(3d, "we are here!");
         map.put(10d, "this is one");
         map.put(9d, "this is two");
-        map.put(8d, "hellow world");
-        map.put(7d, "we are here!");
+        map.put(8d, null);
+        map.put(7d, null); // null values are allowed
+        //map.put(null, "we are here!"); not allowing null key
 
         Set<Number> keys = map.keySet();
         SortedSet sortKeys = new TreeSet(keys);

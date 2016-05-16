@@ -1,8 +1,10 @@
 /*
- * Variable hidden
- * Var at the top scope can be hidden by the one at the lower scope. 
- * 
+ * Variables cannot be overridden, but hidden(shadowing) in the lower scope.
+ * Class variables can be hidden in the sub-class. 
+ * Instance methods can be overriden in the sub-classes. Which method reffered depends on which object pointed to in runtime. 
+ * Class methods cannot be overriden, but hidden(shadowing)
  */
+
 package Hidden;
 
 /**

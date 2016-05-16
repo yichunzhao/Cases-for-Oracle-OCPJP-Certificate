@@ -25,7 +25,7 @@ public class StrSub {
         System.out.println("b2.substring(4)" +b2.substring(4));
         System.out.println(b1.replace(3, 4, b2.substring(4)));
         
-        
+        "hello".concat("world");
         
         
 

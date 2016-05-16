@@ -9,7 +9,7 @@ package Ex;
  *
  * @author YNZ
  */
-public class A {
+class A {
     void polish() throws MyException{
         throw new MyException();
     }

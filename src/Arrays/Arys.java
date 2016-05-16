@@ -9,6 +9,18 @@ package Arrays;
  *
  * @author YNZ
  */
+class MDArray {
+
+    double[][] d = new double[3][];
+
+    {
+        for (int i = 0; i < d.length; i++) {
+         //d[i][]={1, 2, 3}
+        }
+    }
+
+}
+
 public class Arys {
 
     int[] a1 = new int[10];
@@ -20,7 +32,7 @@ public class Arys {
             a1[i] = i;
         }
         am = new int[][]{{1, 2}, {3, 4}, {4, 5, 6}};
-        s1[1] = "funcking shut up!";
+        s1[1] = "shut up!";
     }
 
     public void printMatrix(int[][] vs) {

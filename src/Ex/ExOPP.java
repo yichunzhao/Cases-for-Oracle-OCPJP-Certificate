@@ -16,9 +16,10 @@ public class ExOPP {
 
     /**
      * @param args the command line arguments
+     * @throws Ex.MyException
      *
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws MyException{
         A a = new A();
         try {
             a.polish();

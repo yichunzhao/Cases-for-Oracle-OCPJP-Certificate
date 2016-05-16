@@ -11,6 +11,7 @@ package String;
  */
 public class StringIntern {
     final static int aa= Integer.MAX_VALUE;
+    final static int a = Integer.MIN_VALUE;
 
     /**
      * @param args the command line arguments
@@ -24,6 +25,7 @@ public class StringIntern {
         
         int a =Integer.MAX_VALUE;
         
+        
         System.out.println("a " +a);
         char b = 0;
         b = (char) a;
@@ -31,7 +33,15 @@ public class StringIntern {
         char i = 0;
         System.out.println(i);
         
-        Integer idd = 120;
+        int f=0; 
+        f =-StringIntern.a;
+        System.out.println(StringIntern.a);
+        System.out.println(f);
+        
+        
+        
+        
+        
         
         
     }

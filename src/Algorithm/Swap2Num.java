@@ -5,6 +5,8 @@
  */
 package Algorithm;
 
+import java.lang.Math;
+
 /**
  *
  * @author YNZ
@@ -17,6 +19,8 @@ public class Swap2Num {
     public static void main(String[] args) {
         int a = 10;
         int b = 20;
+        
+        
         
         
     }

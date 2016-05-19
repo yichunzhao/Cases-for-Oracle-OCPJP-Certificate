@@ -5,7 +5,7 @@
  */
 package Arrays;
 
-import java.util.Arrays;
+
 
 /**
  *
@@ -21,10 +21,9 @@ public class StringAry {
         strs[0] = "this is ";
 
         String[] strs1 = new String[]{"this is"};
-
         String[] strs2 = {"this is", "hello world"};
-
-        String[] strs3 = {new String("this is ")};
+        String[] strs3 = {""+1000+new String("this is ")};
+        
         
     }
 

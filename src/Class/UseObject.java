@@ -12,6 +12,8 @@ package Class;
 public class UseObject {
 
     private static String CS = "this is a object";
+    
+   
 
     /**
      *

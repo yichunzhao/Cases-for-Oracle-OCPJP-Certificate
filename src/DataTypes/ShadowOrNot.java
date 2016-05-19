@@ -9,7 +9,7 @@ package DataTypes;
  *
  * @author YNZ
  */
-class TestClass {
+class ShadowOrNot {
 
     int x = 5;
 
@@ -18,13 +18,13 @@ class TestClass {
     }
 
     public static void main(String args[]) throws Exception {
-        TestClass tc = new TestClass();
+        ShadowOrNot tc = new ShadowOrNot();
         tc.looper();
         System.out.println(tc.x);
     }
 
     public void looper() {
-        int x = 0;
+        int x = 0; //local var. scope of method shadowing
         while ((x = getX()) != 0) {
             for (int m = 10; m >= 0; m--) {
                 x = m;

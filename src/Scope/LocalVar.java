@@ -25,4 +25,9 @@ public class LocalVar {
         System.out.print("\n");
     }
     
+    public void m(){
+        int d; //method variable(local var.) 
+        //d++, it must be init. before using it; otherwise it gives comipling error. 
+        {{}};
+    }
 }

@@ -1,8 +1,8 @@
 /*
  * Can a static method be overridden? No. 
  * Instance methods could be overridden, but not class method.
- * overriding is about on runtime, how the methods are dynamically selected. 
-
+ * overriding is about runtime, how the methods are dynamically selected. 
+ * so which overridden method is selected depends on the acutal instance. 
  * 
  */
 package Inheritance;
@@ -11,7 +11,7 @@ package Inheritance;
  *
  * @author YNZ
  */
-class A {
+class BBase {
 
     public static int id = 1;
 
@@ -25,7 +25,7 @@ class A {
     }
 }
 
-class B extends A {
+class BBBBBbase1 extends BBase {
 
     public static int id = 2;
 
@@ -42,17 +42,17 @@ class B extends A {
 class CanStaticOverridden {
 
     public static void main(String... args) {
-        A.whoAmI();
-        B.whoAmI();
+        BBase.whoAmI();
+        BBBBBbase1.whoAmI();
 
-        A a = new A();
-        B b = new B();
+        BBase a = new BBase();
+        BBBBBbase1 b = new BBBBBbase1();
         
-        System.out.println(A.id);
-        System.out.println(B.id);
+        System.out.println(BBase.id);
+        System.out.println(BBBBBbase1.id);
         
         System.out.println(a.id);
-        System.out.println(((A)b).id);
+        System.out.println(((BBase)b).id);
         
         a.getInstance();
         b.getInstance();

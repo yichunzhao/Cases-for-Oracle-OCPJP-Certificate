@@ -1,3 +1,7 @@
+/*
+* array is a reference type 
+*/
+
 package Arrays;
 
 import java.util.ArrayList;
@@ -10,12 +14,6 @@ import java.util.List;
  */
 public class ArrayIsObj {
 
-//    public static <T> void changeIt(T[] d, T n) {
-//        ArrayList<T> al = new ArrayList<>();
-//        al.addAll(Arrays.asList(d));//allAll e1 e2 e3
-//        al.add(n); //all {e1 e2 e3} 
-//        System.out.println(al);
-//    }
     public static void changeIt(Double[] d, Double n) {
         ArrayList<Double> al = new ArrayList<>();
         al.addAll(Arrays.asList(d));//allAll e1 e2 e3

@@ -1,11 +1,12 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Converting an array into list
+ * sort using until colection services.
  */
 package Arrays;
 
-
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 /**
  *
@@ -17,14 +18,17 @@ public class StringAry {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        String[] strs = new String[10];
-        strs[0] = "this is ";
-
-        String[] strs1 = new String[]{"this is"};
-        String[] strs2 = {"this is", "hello world"};
-        String[] strs3 = {""+1000+new String("this is ")};
+        String[] strs = {"Banana", "Orange", "Cherry", "Apple", "Pineapple", "Melon", "Plum"};
+        System.out.println(Arrays.toString(strs));//1 
         
+        List<String> list = Arrays.asList(strs);
+        System.out.println(list); //2 
         
+        Collections.sort(list);
+        System.out.println(list); //3 sort from a to z
+        
+        Collections.reverse(list);
+        System.out.println(list);//4 reverse
     }
 
 }

@@ -13,4 +13,8 @@ class A {
     void polish() throws MyException{
         throw new MyException();
     }
+    
+    void doWell() throws MyException1{
+        throw new MyException1();
+    }
 }

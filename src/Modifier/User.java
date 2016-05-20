@@ -18,10 +18,7 @@ public class User {
     }
 
     public void ctrlTv() {
-
         tv.setCh(Short.valueOf("10"));
         
-        
     }
-
 }

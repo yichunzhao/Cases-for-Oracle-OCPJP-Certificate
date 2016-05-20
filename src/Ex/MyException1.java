@@ -11,4 +11,9 @@ package Ex;
  */
 public class MyException1 extends MyException{
     
+    @Override
+    public String toString(){
+      return "my exception 1";    
+    }
+    
 }

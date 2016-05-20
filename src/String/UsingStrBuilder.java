@@ -5,6 +5,8 @@
  */
 package String;
 
+import java.util.ArrayList;
+
 
 /**
  *
@@ -21,11 +23,18 @@ public class UsingStrBuilder {
         
         UsingStrBuilder builder = new UsingStrBuilder("this is string buildier. ");
         builder.sb.append(12.45f);
+        
         System.out.println(""+builder.sb);
-        builder.sb.setLength(3);
+        builder.sb.append(1);
+        builder.sb.append("ddddddddd");
+        builder.sb.append(new ArrayList());
         
         System.out.println(""+builder.sb);
         
+        
+        
+        
+                
     }
     
 }

@@ -29,6 +29,8 @@ public class StringAry {
         
         Collections.reverse(list);
         System.out.println(list);//4 reverse
+        
+        //checking an elem. in an array. 
+        System.out.println("strs contains \"Orange\" "+list.contains("Orange"));
     }
-
 }

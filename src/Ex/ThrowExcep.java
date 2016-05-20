@@ -1,7 +1,7 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * exception happends in catch block won't be caught.
+ * using nested try block to catch it. 
+ * or throws to caller. 
  */
 package Ex;
 
@@ -17,19 +17,26 @@ class PortConnector {
         if (Math.random() > 0.5) {
             throw new IOException();
         }
-        throw new RuntimeException();
+        throw new MyException();
     }
 }
 
 class ThrowExcep {
 
     @SuppressWarnings("CallToPrintStackTrace")
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         try {
-            PortConnector pc = new PortConnector(10);
-        } catch (Exception re) {
-            re.printStackTrace();
+            try {
+                PortConnector pc = new PortConnector(10);
+            } catch (Exception re) {
+                re.printStackTrace();
+                throw new ArithmeticException();
+            } finally {
+                System.out.println("finally");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
-}
 
+}

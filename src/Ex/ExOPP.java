@@ -5,13 +5,23 @@
  */
 package Ex;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 /**
  *
  * @author YNZ
  */
+class MyException2 extends Exception {
+
+    public MyException2() {
+        super();
+    }
+
+    @Override
+    public String toString() {
+        return "this is my exception 2 ";
+    }
+
+}
+
 public class ExOPP {
 
     /**
@@ -19,14 +29,20 @@ public class ExOPP {
      * @throws Ex.MyException
      *
      */
-    public static void main(String[] args) throws MyException{
+    public static void main(String[] args) throws MyException {
         A a = new A();
         try {
-            a.polish();
+            a.doWell();
+            try {
+                throw new MyException2();
+                //a.polish(); //this exception is not caught. for doWell throw early. 
+            } catch (MyException2 ex) {
+                System.out.println(ex);
+            }
         } catch (MyException ex) {
-            Logger.getLogger(ExOPP.class.getName()).log(Level.SEVERE, null, ex);
+            System.out.println(ex);
         } finally {
-            System.out.println("t");
+            System.out.println("finally whatever");
         }
 
     }

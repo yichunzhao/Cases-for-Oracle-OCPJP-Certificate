@@ -26,6 +26,7 @@ public class MultiDimArray {
         for (int[] d1 : d) {
             for (int j = 0; j < d1.length; j++) {
                 d1[j] = r.nextInt(200);
+
             }
         }
 

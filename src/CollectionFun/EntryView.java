@@ -1,12 +1,13 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * 
+ * Traverse map for each by its Entry elements.
+ * 
  */
 package CollectionFun;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
 
 /**
@@ -23,15 +24,14 @@ public class EntryView {
         map.put(1, "this is ");
         map.put(2, "anything possible");
         map.put(2, "whatever it could be");
+        map.put(3, "restful webservice");
+        map.put(4, "persistence and entity classes");
 
-        Set set = map.entrySet();
-        Set keySet = map.keySet();
+        Set<Entry<Number, String>> entrySet = map.entrySet();
 
-        System.out.println(keySet);
-        
-        System.out.println("Magasin, Kgs Nytor 96433".toLowerCase().contains("magasin"));
-        System.out.println("magasin".toLowerCase().contains("Magasin, Kgs Nytor 96433"));
-        
+        for (Entry<Number, String> e : entrySet) {
+            System.out.println("key: " + e.getKey() + " value: " + e.getValue());
+        }
 
     }
 

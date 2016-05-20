@@ -1,7 +1,7 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Class wrappers of primitive types offer static service methods. 
+ * converting digit numbers from String to numeric primitive type.
+ * String class offers another way around, converting number to string.
  */
 package NumberWraper;
 
@@ -15,13 +15,21 @@ public class UserNumbers {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       double d =  Double.parseDouble("20.456");
-       double a = 10.46;
-        System.out.println("sum = " + Double.sum(a, d));
-        System.out.printf("%d %d /n ", d,a);
-        
-        boolean b = true; 
-        
+        double d = Double.parseDouble("20.456");
+        double a = Double.parseDouble("10.46");
+
+        double sum = a + d;
+        System.out.printf("%f + %f = %f \n ", d, a, sum);
+
+        //converting from numeric to string. 
+        String aStr = String.valueOf(d);
+        String dStr = String.valueOf(a);
+
+        //valueOf srevice returns wrapper type
+        Double e = Double.valueOf(dStr);
+        System.out.println(e.toString());
+
+
+
     }
-    
 }

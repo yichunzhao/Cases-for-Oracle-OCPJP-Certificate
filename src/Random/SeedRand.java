@@ -25,12 +25,10 @@ public class SeedRand {
         int[][] results = new int[2][10];
 
         for (int i = 0; i < results[0].length; i++) {
-            //System.out.println("r1 " + r1.nextInt());
             results[0][i] = r1.nextInt();
         }
 
         for (int i = 0; i < results[1].length; i++) {
-            //System.out.println("r2 " + r2.nextInt());
             results[1][i] = r2.nextInt();
         }
 

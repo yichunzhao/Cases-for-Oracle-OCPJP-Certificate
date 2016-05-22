@@ -6,6 +6,7 @@
  */
 package Random;
 
+import java.util.Arrays;
 import java.util.Random;
 
 /**
@@ -32,14 +33,9 @@ public class SeedRand {
             //System.out.println("r2 " + r2.nextInt());
             results[1][i] = r2.nextInt();
         }
-        
-        for(int[] e: results){
-            for(int i=0; i<e.length;i++){
-                System.out.print(" "+e[i]);
-            }
-            System.out.println("\n");
+
+        for (int[] e : results) {
+            System.out.println(" " + Arrays.toString(e));
         }
-
     }
-
 }

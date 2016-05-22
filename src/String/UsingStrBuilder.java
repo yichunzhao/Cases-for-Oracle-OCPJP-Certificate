@@ -6,15 +6,16 @@
 package String;
 
 import java.util.ArrayList;
-
+import java.util.Arrays;
 
 /**
  *
  * @author YNZ
  */
 public class UsingStrBuilder {
-    StringBuilder sb;
 
+    StringBuilder sb;
+    
     public UsingStrBuilder(String str) {
         sb = new StringBuilder(str);
     }
@@ -24,17 +25,15 @@ public class UsingStrBuilder {
         UsingStrBuilder builder = new UsingStrBuilder("this is string buildier. ");
         builder.sb.append(12.45f);
         
-        System.out.println(""+builder.sb);
+        System.out.println("" + builder.sb);
         builder.sb.append(1);
         builder.sb.append("ddddddddd");
         builder.sb.append(new ArrayList());
         
-        System.out.println(""+builder.sb);
+        System.out.println("" + builder.sb);
         
         
         
-        
-                
     }
     
 }

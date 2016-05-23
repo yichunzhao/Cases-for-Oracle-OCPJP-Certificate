@@ -36,11 +36,6 @@ public class ForLoopUnary {
         int p,q; 
         p=q=100; //valid
         
-        //int x=y=100; //invalid, y is not defined.  
-        int x =2;
-        x += x++ * x++ * x++; // x= 2 +(2++ * 2++ * 2++)
-        //x= 2+(2*3*4) = 2+24 =26
-        System.out.println("x="+x);
 
     }
 

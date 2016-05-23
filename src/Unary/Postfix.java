@@ -19,6 +19,12 @@ public class Postfix {
         x += x++ * x++ * x++; // x= 2 +(2++ * 2++ * 2++)
         //x= 2+(2*3*4) = 2+24 =26
         System.out.println("x=" + x);
+        
+        short a = 2;
+        float f = (float) 1.0;
+        double ff= 1.0;
+        
     }
+    
 
 }

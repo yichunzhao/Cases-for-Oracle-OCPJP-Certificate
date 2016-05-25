@@ -20,6 +20,22 @@ class BBase {
         System.out.println("A");
     }
 
+    public static void doIt() {
+        System.out.println("do it");
+    }
+
+    public void doIt(int a) {
+
+    }
+
+    public float doIt(int a, float b) {
+        return a + b;
+    }
+
+    public int doIt(int a, int b) {
+        return a + b;
+    }
+
     public void getInstance() {
         System.out.println(this.hashCode());
     }
@@ -31,6 +47,10 @@ class BBBBBbase1 extends BBase {
 
     public static void whoAmI() {
         System.out.println("B");
+    }
+
+    public static void doIt() {
+        System.out.println("do it");
     }
 
     @Override
@@ -45,15 +65,17 @@ class CanStaticOverridden {
         BBase.whoAmI();
         BBBBBbase1.whoAmI();
 
+        BBase.doIt();
+
         BBase a = new BBase();
         BBBBBbase1 b = new BBBBBbase1();
-        
+
         System.out.println(BBase.id);
         System.out.println(BBBBBbase1.id);
-        
+
         System.out.println(a.id);
-        System.out.println(((BBase)b).id);
-        
+        System.out.println(((BBase) b).id);
+
         a.getInstance();
         b.getInstance();
     }

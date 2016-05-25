@@ -33,15 +33,20 @@ class Bbase extends AbstractBase {
 }
 
 class XXBbase1 extends Bbase {
+//    int i = Math.round(3.5f);
 
-    int i = Math.round(3.5f);
+    public XXBbase1() {
+        super();
+    }
 
     public static void main(String[] args) {
-        Bbase a = new XXBbase1();
-        a.print();
+//        Bbase a = new XXBbase1();
+//        a.print();
+        
+        XXBbase1 bbase1 = new XXBbase1();
     }
 
     void print() {
-        System.out.println(i);
+        System.out.println("BB");
     }
 }

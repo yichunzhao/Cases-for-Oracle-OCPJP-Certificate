@@ -38,7 +38,7 @@ public class Base {
         
     }
 
-    public short getValue() {
+    public short getValue() throws Exception {
         return 1;
     } //1
 

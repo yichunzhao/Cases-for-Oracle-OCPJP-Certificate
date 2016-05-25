@@ -22,8 +22,9 @@ public class CaseSeq {
     public static void main(String[] args) {
         char b = 'b'; //-128 to 127
         switch(b){
-            case 'b':
-            case 'c':System.out.println("c");
+            case 'p':System.out.println("p");
+            case 'b':System.out.println("b");
+            case 'c':System.out.println("c"); break;
             default:System.out.println("default");
             case 2:
             case 80:
@@ -34,6 +35,9 @@ public class CaseSeq {
         int d =400;
         c = (char) d;
         d = c;
+        
+        char danish='Æ';
+        int a = danish;
         
         int $_$ = 0;
 

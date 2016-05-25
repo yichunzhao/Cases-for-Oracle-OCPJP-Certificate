@@ -7,6 +7,8 @@
  */
 package Overriding;
 
+import java.io.FileNotFoundException;
+
 /**
  *
  * @author YNZ
@@ -15,8 +17,9 @@ public class TestClass {
 
     /**
      * @param args the command line arguments
+     * @throws java.io.FileNotFoundException
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException, Exception {
 
         System.out.println("Base1.ROOT " + Base.ROOT);
         System.out.println("Base2.ROOT " + Base2.ROOT); //shadowing
@@ -35,5 +38,9 @@ public class TestClass {
         System.out.println(b1.ROOT);
         System.out.println(""+ b.height);
         System.out.println(""+b1.height);
+        
+        
+       
+        
     }
 }

@@ -24,6 +24,8 @@ public class Postfix {
         float f = (float) 1.0;
         double ff= 1.0;
         
+        x+=1;
+        
     }
     
 

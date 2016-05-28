@@ -22,8 +22,8 @@ public class CaseSeq {
     public static void main(String[] args) {
         char b = 'b'; //-128 to 127
         switch(b){
-            case 'p':System.out.println("p");
-            case 'b':System.out.println("b");
+            case 'p':String str = "p case"; System.out.println(str);
+            case 'b':System.out.println("b" );
             case 'c':System.out.println("c"); break;
             default:System.out.println("default");
             case 2:

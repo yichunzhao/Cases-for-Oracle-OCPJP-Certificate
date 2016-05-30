@@ -20,6 +20,10 @@ public class UseSwitch {
         Month.valueOf(Month.April.name());
 
         switch (x) {
+            default:
+                System.out.println(" not here");
+                break;
+
             case 1:
                 System.out.println("Bad day");
                 break;
@@ -34,9 +38,6 @@ public class UseSwitch {
                 break;
             case 5:
                 System.out.println("Perfect day");
-                break;
-            default:
-                System.out.println(" not here");
                 break;
         }
 

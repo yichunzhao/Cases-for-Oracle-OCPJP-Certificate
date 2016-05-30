@@ -5,7 +5,8 @@ package Scope;
  * @author YNZ
  */
 public class LocalVar {
-
+    
+    
     static int i;
 
     public static void main(String[] args) {

@@ -21,7 +21,6 @@ public class BlockScope {
         } else {
             int i = 1; //block scope
         }
-
     }
 
 }

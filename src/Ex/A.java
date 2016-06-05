@@ -5,16 +5,33 @@
  */
 package Ex;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author YNZ
  */
 class A {
-    void polish() throws MyException{
+
+    void polish() throws MyException {
         throw new MyException();
     }
-    
-    void doWell() throws MyException1{
+
+    void doWell() throws MyException1 {
         throw new MyException1();
     }
+}
+
+class CaptureEx {
+
+    public static void main(String[] args) throws MyException1 {
+        A a = new A();
+        try {
+            a.doWell();
+        } finally {
+
+        }
+    }
+
 }

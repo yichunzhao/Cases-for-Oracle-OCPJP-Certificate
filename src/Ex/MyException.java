@@ -9,11 +9,14 @@ package Ex;
  *
  * @author YNZ
  */
-public class MyException extends Exception{
+public class MyException extends Exception {
 
     public MyException() {
-        super("my exception");
+        super();
     }
-    
+
+    public MyException(String message) {
+        super(message);
+    }
 
 }

@@ -4,7 +4,6 @@
  * Instance methods can be overriden in the sub-classes. Which method reffered depends on which object pointed to in runtime. 
  * Class methods cannot be overriden, but hidden(shadowing)
  */
-
 package Hidden;
 
 /**
@@ -15,6 +14,8 @@ class A {
 
     public int size = 10;
     public int age = 12;
+    private int height =13;
+    final protected int x = 1222;
 
     public void doSth() {
         System.out.println("A");
@@ -25,6 +26,8 @@ class B extends A {
 
     public int size = 20;
     private int age = 13;
+    protected int height = 14;
+    final protected int x=1333;
 
     @Override
     public void doSth() {
@@ -54,27 +57,25 @@ public class Hidden {
         //System.out.println(c.age);  //not valid
         System.out.println(((A) c).age);
         c.doSth();
-        
-        System.out.println("--------------");        
+
+        System.out.println("--------------");
         B c1 = new C();
         c1.doSth();
-        
-        System.out.println("+++++++++++++++");        
+
+        System.out.println("+++++++++++++++");
         B b = new B();
-        
-        System.out.println(((A)b).age);
+        System.out.println(((A) b).age);
         b.doSth();
-        
-        System.out.println("+++++++++++++++");                
+
+        System.out.println("+++++++++++++++");
         A a = new C();
         a.doSth();
         System.out.println(a.age);
-        
-        System.out.println("+++++++++++++++");        
+
+        System.out.println("+++++++++++++++");
         A a1 = new A();
         a1.doSth();
         System.out.println(a1.age);
-        
 
     }
 

@@ -1,16 +1,14 @@
 /*
  * hiding fields; if
- * 
- * 
  */
+
 package Inheritance;
 
 /**
- *
  * @author YNZ
  */
-public class Cat extends Animal {
 
+public class Cat extends Animal {
     //for the class method, it is not allowed to use @override annotation.
     //the class method in the super class, will be hidden here. 
     public static int ClassFld = 20; //hiding a class flied is not recommended, for it is code reading reason. 
@@ -42,7 +40,6 @@ public class Cat extends Animal {
         this.testInstanceMethod();//from cat
         System.out.println("animal flds " + Animal.ClassFld); //10
         System.out.println("cat flds " + Cat.ClassFld);//20
-        
     }
 
     @Override

@@ -14,23 +14,28 @@ interface Flyer {
     String getName();
 }
 
-class Bird implements Flyer {
+abstract class Bird implements Flyer {
 
     public String name;
 
     public Bird(String name) {
         this.name = name;
+        
     }
 
-    public String getName() {
-        return name;
-    }
+
 }
 
 class Eagle extends Bird {
 
     public Eagle(String name) {
         super(name);
+    }
+
+    @Override
+    public String getName() {
+        System.out.println(this.getClass().getName());
+        return this.name;
     }
 }
 
@@ -42,7 +47,8 @@ class TestClass {
         System.out.println(((Eagle)f).name);
         System.out.println(((Bird)f).name);
         System.out.println(((Bird)f).getName());
-//PRINT NAME HERE
+
+        System.out.println(f instanceof Eagle);
     }
 }
 

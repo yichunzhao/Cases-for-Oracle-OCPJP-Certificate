@@ -32,6 +32,8 @@ public class RemoveEle {
 
         al.contains("ae");
         System.out.println("contain ae " + al.contains("ae"));
+        
+        
 
     }
 }

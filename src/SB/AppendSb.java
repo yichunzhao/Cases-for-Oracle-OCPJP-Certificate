@@ -3,24 +3,26 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Arrays;
+package SB;
 
 /**
  *
  * @author YNZ
  */
-public class MultiDimAry {
+public class AppendSb {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int[][] b = {{1,2,4},{3,4}};
-        int[][] c = {{2,3,8},{5,9,8}};
+        StringBuilder sb1 = new StringBuilder();
+        char[] name = {'J', 'a', 'v', 'a', '7'};
+        sb1.append(name, 1, 3);
+        System.out.println(sb1);
+        sb1.insert(0, name, 1, 2);
+        System.out.println(sb1);
         
         
-        int[] a[][] = {b, c};
-
     }
 
 }

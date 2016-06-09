@@ -18,6 +18,7 @@ public class DoubleWayMax {
         int[] nums = {3, 4, 5, 8, 9, 10, 123, 39, -10};
         int max1 = nums[0];
         int max2 = nums[nums.length - 1];
+        long start = System.currentTimeMillis();
         for (int i = 1, j = nums.length - 2; i <= j; ++i, --j) {
             if (nums[i] > max1) {
                 max1 = nums[i];
@@ -26,6 +27,8 @@ public class DoubleWayMax {
                 max2 = nums[j];
             }
         }
-        System.out.println("max "+ Math.max(max1, max2) );
+        long end = System.currentTimeMillis();
+        System.out.println("max " + Math.max(max1, max2) + " time = " + (end - start));
+
     }
 }

@@ -24,7 +24,7 @@ class CoreJava {
     }
     
     public CoreJava(float x) {
-        System.out.println("It is a int...");
+        System.out.println("It is a float...");
     }
  
     public static void main(String[] args) {

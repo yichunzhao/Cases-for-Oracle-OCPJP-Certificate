@@ -15,21 +15,28 @@ class SuperClass {
     static void superMethod() {
         System.out.println(SuperClass.class.getSimpleName());
     }
+
+    public SuperClass() {
+        System.out.println("Super class!");
+    }
     
     static int size = 10;
 
     private void lowerMethod() {
 
     }
-
 }
 
 class SubClass extends SuperClass {
     private float a = 12.56f;
     static float size = 20;
+
+    public SubClass() {
+        System.out.println("Sub-Class!");
+    }
+    
     static void superMethod() {
         System.out.println(SubClass.class.getSimpleName());
-
     }
 
     //instance method cannot override class method. 

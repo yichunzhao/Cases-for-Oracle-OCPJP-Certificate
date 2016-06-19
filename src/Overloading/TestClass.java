@@ -1,8 +1,8 @@
 /*
  * JVM finds the closest type? maybe not that simple.
  * one thing could be confirmed; the exaclty matched type will be the first
- * preference. for integers, then long is first preference, even passing a int.
- * If you add a Object type, then int will fall in there. wow, this is too hard. 
+ * priority.
+ * 
  */
 package Overloading;
 
@@ -27,16 +27,31 @@ class TestClass {
     void probe(Long x) {
         System.out.println("In LONG");
     } //4
-    
+
     void probe(Object x) {
         System.out.println("In Object");
     } //5
-    
+
+    void probe(int x) {
+        System.out.println("In int");
+    } //6
 
     public static void main(String[] args) {
         Integer a = 4;
         new TestClass().probe(a); //5
         Long b = 4L;
         new TestClass().probe(b); //6
+        byte c = 100;
+        new TestClass().probe(c);
+        char d = 'a';
+        new TestClass().probe(d);
+        int e = 10;
+        new TestClass().probe(e);
+        String str ="aha";
+        new TestClass().probe(str);
+        int[] array = new int[3];
+        new TestClass().probe(array);
+        
+
     }
 }

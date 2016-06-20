@@ -31,16 +31,17 @@ public class RemoveEle {
 
         al.contains("ae");
         System.out.println("contain ae " + al.contains("ae"));
-        
+
         //remove the first occurence of object
         al.add("ae");
         System.out.println("" + al.toString());
-        
+
         al.remove("ae");
         System.out.println("" + al.toString());
-        
+
         al.remove(new String("ae"));
         System.out.println("" + al.toString());
+
+        System.out.println(al.indexOf("aa"));
     }
 }
-

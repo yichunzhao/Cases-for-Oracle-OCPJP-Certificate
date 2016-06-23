@@ -1,8 +1,8 @@
 /*
- * can switch(i) accept object type? Object IS_A one of followings? no. 
+ * switch(x) cannot handle Object type, but String and Enum alone 
  * 
- * i could be only be primitive type: byte char short int;  
- * reference type: String and Enum. 
+ * in the following case, as input x ='d', case 'd' is triggered, and following
+ * down until a break found; all operations will be implemented. 
  * 
  */
 package Switch;
@@ -17,12 +17,24 @@ public class AcceptObject {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        char i = 'a';
-        
-        switch(i){
-            default:System.out.println("dd");
+        char c = 'd';
+
+        switch (c) {
+            case 'd':
+                System.out.println("d");
+            case 'c':
+                System.out.println("c");
+            case 'a':
+                System.out.println("a");
+                break;
+            case 'b':
+                System.out.println("a");
+                break;
+            default:
+                System.out.println("dd");
+
         }
-        
+
     }
-    
+
 }

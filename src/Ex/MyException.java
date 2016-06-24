@@ -48,7 +48,6 @@ class PoliceStation extends Station implements PersonAgent {
     @Override
     public void search(Person person) throws MyException, NullPointerException {
 
-
         if (person == null) {
             throw new NullPointerException();
 
@@ -76,6 +75,8 @@ class PersonBooks {
             Logger.getLogger(PersonBooks.class.getName()).log(Level.SEVERE, null, ex);
         } catch (NullPointerException ex) {
             Logger.getLogger(PersonBooks.class.getName()).log(Level.SEVERE, null, ex);
+        } finally {
+
         }
 
         policeStation.doSth();

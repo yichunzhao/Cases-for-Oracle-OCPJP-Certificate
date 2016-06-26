@@ -11,7 +11,7 @@ import java.util.ArrayList;
  *
  * @author YNZ
  */
-public class NullPointerException {
+public class NullPointerExceptionTest {
 
     static private ArrayList<String> al;
 
@@ -22,6 +22,10 @@ public class NullPointerException {
         if (al != null) {
             al.add("ss");
         }
+    }
+
+    NullPointerExceptionTest() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 }

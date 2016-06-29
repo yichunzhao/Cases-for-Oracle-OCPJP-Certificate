@@ -76,6 +76,17 @@ public class Ask {
         if (ask.b | ask.str.isEmpty()) {
             System.out.println("bit or operation, both evaluated");
         }
+        
+        
+        char c = 'a';//16
+        short s = (short)c;//16
+        int i =c;
+        long l = c;
+        byte b = (byte)c;
+        
+        c = (char)b;
+        
+        //int x=y=z=10;
 
     }
 

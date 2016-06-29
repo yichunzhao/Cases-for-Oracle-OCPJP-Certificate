@@ -27,6 +27,8 @@ public class NumFormatEx {
             } finally {
                 return on = false;
             }
+            
+            
         }
     }
 

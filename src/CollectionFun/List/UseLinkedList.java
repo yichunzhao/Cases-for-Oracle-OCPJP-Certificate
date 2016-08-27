@@ -1,11 +1,12 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Queue is implemented by the LinkedList; 
+ * retrieve head: element(), peek(), and poll(); 
+ * add to the tail of queue: add()
  */
 package CollectionFun.List;
 
 import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Random;
 
 /**
@@ -19,7 +20,7 @@ public class UseLinkedList {
         LinkedList<Person> linkedPersons = new LinkedList<>();
         Random r = new Random();
         char a = 'A';
-        for (int i = 1; i < 30; i++) {
+        for (int i = 1; i < 4; i++) {
             if (a > 'Z') {
                 break;
             }
@@ -28,14 +29,26 @@ public class UseLinkedList {
             a++;
         }
         
-        linkedPersons.add(new Person("YNZ", 20));
-        //System.out.println(linkedPersons);
+        Queue<Person> queue = linkedPersons;
+        System.out.println("Initial Q = " + queue);
         
-        linkedPersons.addFirst(new Person("YNZ", 30));
-        //System.out.println(linkedPersons);
+        Person head = queue.element();
+        System.out.println("after element = " + head);
+        System.out.println("Q = " + queue);
         
-        Person px = linkedPersons.element();
-        System.out.println(px);
+        Person peek = queue.peek();
+        System.out.println("after peek = " + peek);
+        System.out.println("Q = " + queue);
+        
+        Person poll = queue.poll();
+        System.out.println("after poll = " + poll);
+        
+        System.out.println("Q = " + queue);
+        
+        queue.add(new Person("Ynz",55));
+        System.out.println("Q added " + queue);
+        System.out.println("element = "+ queue.element());
+        
 
     }
 

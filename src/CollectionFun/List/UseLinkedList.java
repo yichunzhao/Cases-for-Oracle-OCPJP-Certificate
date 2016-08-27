@@ -20,7 +20,7 @@ public class UseLinkedList {
         Random r = new Random();
         char a = 'A';
         for (int i = 1; i < 30; i++) {
-            if (a >= 'Z') {
+            if (a > 'Z') {
                 break;
             }
             String name = String.valueOf(a).concat(String.valueOf(a));

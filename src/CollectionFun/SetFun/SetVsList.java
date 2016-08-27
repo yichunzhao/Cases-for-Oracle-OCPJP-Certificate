@@ -19,9 +19,9 @@ public class SetVsList {
         Set<Person> treeSet = new TreeSet<>();
 
         Person p1 = new Person("ybnx");
-        Person p2 = new Person("dadfdx");
-        Person p3 = new Person("eedYnx");
-        Person p4 = new Person("dfgfdsYbnx");
+        Person p2 = new Person("dadf");
+        Person p3 = new Person("eedY");
+        Person p4 = new Person("dfgf");
 
         treeSet.add(p1);
         treeSet.add(p2);

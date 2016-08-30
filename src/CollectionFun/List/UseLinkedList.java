@@ -31,7 +31,7 @@ public class UseLinkedList {
         
         Queue<Person> queue = linkedPersons;
         System.out.println("Initial Q = " + queue);
-        
+         
         Person head = queue.element();
         System.out.println("after element = " + head);
         System.out.println("Q = " + queue);

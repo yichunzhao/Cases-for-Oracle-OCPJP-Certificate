@@ -16,7 +16,7 @@ public class UserNumbers {
      */
     public static void main(String[] args) {
         double d = Double.parseDouble("20.456");
-        double a = Double.parseDouble("10.46");
+        double a = Double.parseDouble("10.461");
 
         double sum = a + d;
         System.out.printf("%f + %f = %f \n ", d, a, sum);
@@ -25,11 +25,9 @@ public class UserNumbers {
         String aStr = String.valueOf(d);
         String dStr = String.valueOf(a);
 
-        //valueOf srevice returns wrapper type
+        //valueOf returns wrapper type
         Double e = Double.valueOf(dStr);
         System.out.println(e.toString());
-
-
 
     }
 }

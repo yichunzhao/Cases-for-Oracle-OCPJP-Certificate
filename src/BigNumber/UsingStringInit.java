@@ -1,7 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * Using BigDecimal.valueOf to create a Big number, instead of using constructor.
+ * 
  */
 package BigNumber;
 
@@ -25,5 +24,8 @@ public class UsingStringInit {
         String val = "1000.1";
         BigDecimal dd = new BigDecimal(val);
         System.out.println("" + dd);
+        
+        //using static method valueOf() can also sovle this issue. 
+        System.out.println(BigDecimal.valueOf(d)); 
     }
 }

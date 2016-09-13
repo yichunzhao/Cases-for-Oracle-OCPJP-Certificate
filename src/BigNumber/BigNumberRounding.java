@@ -15,8 +15,7 @@ import java.math.RoundingMode;
 public class BigNumberRounding {
 
     public static void main(String[] args) {
-        BigDecimal bd = new BigDecimal(String.valueOf(12.346377545)).setScale(4, RoundingMode.HALF_UP);
+        BigDecimal bd = new BigDecimal(String.valueOf(12.346377545)).setScale(5, RoundingMode.HALF_UP);
         System.out.println("" + bd);
     }
-
 }

@@ -15,7 +15,7 @@ package Immutable;
 
 //final class cannot be inheritted
 final class Person {
-
+    //final field can only init. once; later on cannot be modified.  
     final private String firstName; //constant field cannot be modified. 
     final private String lastName;
 

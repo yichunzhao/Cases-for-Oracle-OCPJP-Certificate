@@ -1,5 +1,5 @@
 /*
- * 
+ * custome objects can be compared, as implemeting compartor interface
  * 
  * 
  */

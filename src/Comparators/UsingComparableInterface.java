@@ -61,10 +61,17 @@ public class UsingComparableInterface {
         //shuffle
         Collections.shuffle(listApple);
         System.out.println(listApple);
-        
+
         //or using service class Arrays
-        Apple[] a = new Apple[listApple.size()];
-        Arrays.sort(listApple.toArray(a));
+        Apple[] b = new Apple[listApple.size()];
+        System.out.println("b=" + Arrays.toString(b));
+        Apple[] a = listApple.toArray(b);
+        
+        System.out.println("a=" + Arrays.toString(a));
+        System.out.println("b=" + Arrays.toString(b));
+        System.out.println("c=" + Arrays.toString(listApple.toArray(new Apple[0])));
+        Arrays.sort(a);
+        System.out.println(listApple);
         System.out.println(Arrays.toString(a));
     }
 

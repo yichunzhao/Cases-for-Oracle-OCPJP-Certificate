@@ -1,7 +1,7 @@
 /*
- * Is this cage only for animals? or for a human? or for all Objects?
+ * Is this Box only for animals? or for a human? or for all Objects?
  * Using wildcard in the Generic experession. 
- * For a cage, we may specify it holds only certain animals, rather than other things.
+ * For a Box, we may specify it holds only certain animals, rather than other things.
  */
 package Generic;
 
@@ -34,7 +34,7 @@ public class Cage<T extends Animal> { //here is non-static declaring of type var
     
 
     /**
-     * Adding cage into cages, a list of cages.
+     * Adding Box into cages, a list of cages.
      * @param <T>
      * @param t
      * @param cages

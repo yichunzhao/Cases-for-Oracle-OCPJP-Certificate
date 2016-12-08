@@ -61,7 +61,7 @@ class Manager extends Person {
     public Manager() {
 
     }
-    
+
 }
 
 class Box<T extends Person> {
@@ -93,15 +93,14 @@ public class WildCard {
 
     public static void main(String[] args) {
         Box box = new Box(new Person());
-        
+
         Box box1 = new Box(new Employee(1000L));
         Person p1 = box1.getT();
         System.out.println("p1 is employee: " + String.valueOf(p1 instanceof Employee));
-        
-        
-        Box box2 = new Box( new Manager());
+
+        Box box2 = new Box(new Manager());
         Person s1 = box2.getT();
-        System.out.println("s1 is Manager: "+ String.valueOf(s1 instanceof Manager));
+        System.out.println("s1 is Manager: " + String.valueOf(s1 instanceof Manager));
 
     }
 

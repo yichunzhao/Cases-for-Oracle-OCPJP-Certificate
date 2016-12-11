@@ -14,12 +14,12 @@ import java.nio.file.Path;
  */
 public class UsingPath {
     public static void main(String[] args) {
-        File myFile = new File("myFile.txt");
+        File myFile = new File("myNIOFile.txt");
         Path path =  myFile.toPath();
         System.out.println(""+path.toString());
         System.out.println(""+path.getRoot());
         System.out.println(""+path.isAbsolute());
-        
+        System.out.println(""+path.toAbsolutePath());
                 
     }
 }

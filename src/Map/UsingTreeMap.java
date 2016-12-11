@@ -1,7 +1,7 @@
 /*
- * TreeMap sorting the pairs by the key; 
+ * TreeMap is sorted according to natural ordering of the key. 
  * key object implements comparable interface.  
- * 
+ * it offers log(n) cost as using put(), get(), remove().  
  */
 package Map;
 
@@ -22,6 +22,9 @@ public class UsingTreeMap {
         map.put("three", "building restful web service with spring");
         map.put("four", "introduction to java programming");
         
+        System.out.println("map content: "+ map);
+        
+        map.replace("four", "my book");
         System.out.println("map content: "+ map);
 
     }

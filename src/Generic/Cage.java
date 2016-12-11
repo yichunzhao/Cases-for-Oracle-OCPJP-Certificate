@@ -1,4 +1,4 @@
-/*
+/* Class generics
  * Is this Box only for animals? or for a human? or for all Objects?
  * Using wildcard in the Generic experession. 
  * For a Box, we may specify it holds only certain animals, rather than other things.

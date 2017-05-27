@@ -12,8 +12,8 @@ package Regex;
 public class PasswordValidate {
 
     public static void main(String[] args) {
-        String pwd0 = "qwerty";
-        String pwd1 = "Q9_";
+        String pwd0 = "dell";
+        String pwd1 = "Q343433rtfg9_";
         String pwd2 = "19GDddss";
         String pwd3 = "2017Well";
         String pwd4 = "Well2017";
@@ -22,7 +22,8 @@ public class PasswordValidate {
         
 
         //String regx = "^(?=(.*\\d){1})(.*\\S)(?=.*[A-Z\\S])[a-z\\S]{3,}";
-        String regx = "((?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{8,})";
+        //String regx = "((?=.*\\d)(?=.*[a-z_])(?=.*[A-Z])(.{8,}))";
+        String regx = "^((?=.*\\d)(?=.*[a-z_])(?=.*[A-Z])(.{8,}))$";
         
         //String regx = "([\\d]+)([a-z]+)([A-Z]+)(.{8,})";
         //String regx = "([A-Z]+)([\\d]+)([a-z]*)(.{8,})";

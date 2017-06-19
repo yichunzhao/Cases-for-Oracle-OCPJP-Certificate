@@ -32,9 +32,6 @@ public class AcceptObject {
                 break;
             default:
                 System.out.println("dd");
-
         }
-
     }
-
 }

@@ -16,7 +16,7 @@ public class Diamond {
 
     public static void main(String[] args) {
 
-        List<String> list = new ArrayList();
+        List<String> list = new ArrayList<>();
         list.add("forgetting diamond");
         list.add("ddd");
 
@@ -24,13 +24,10 @@ public class Diamond {
         p.getT1();
 
         List<Number> list1 = new ArrayList<>();
-        boolean add = list1.add(10);
-
-        List<? extends Number> numList = new ArrayList<>();
-        //numList = new ArrayList<Double>();
+        list1.add(10);
         
-       
-        
+        List<Integer> nums = new ArrayList();
+        nums.add(2);
     }
 
 }

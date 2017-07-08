@@ -6,6 +6,8 @@
 package Date;
 
 import java.sql.Timestamp;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -20,6 +22,12 @@ public class CurrentTimeStamp {
         
         Date date = new Date(System.currentTimeMillis());
         System.out.println("current date : " + date);
+        
+        DateFormat df = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+        Date current = new Date();
+        
+        System.out.println("raw date" + current);
+        System.out.println("formated:  " + df.format(date));
         
         
     }

@@ -1,12 +1,10 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * how to convert a string into an enum 
+ * 
+ * 
  */
 package Enum;
 
-import java.util.HashSet;
-import java.util.Set;
 
 /**
  *
@@ -19,16 +17,10 @@ enum Day {
 public class MyClass {
 
     public static void main(String args[]) {
+        
+       Boolean yes =  Day.valueOf("Monday".toUpperCase()).equals(Day.MONDAY);
+        System.out.println(""+ yes);
+        
 
-        Set<Day> mySet = new HashSet();
-
-        mySet.add(Day.SATURDAY);
-        mySet.add(Day.WEDNESDAY);
-        mySet.add(Day.FRIDAY);
-        mySet.add(Day.WEDNESDAY);
-     
-        for (Day d : mySet) {
-            System.out.println(d);
-        }
     }
 }

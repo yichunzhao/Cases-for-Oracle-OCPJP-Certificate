@@ -1,6 +1,6 @@
 /*
  * 
- * 
+ * mkdirs(), creating folders more than one layer. 
  * 
  */
 package File;
@@ -15,9 +15,9 @@ import java.io.IOException;
 public class JavaDirectorySeparator {
 
     public static void main(String[] args) throws IOException {
-        File dir = new File("./folder");
-        System.out.println("" + dir.mkdir());
-        File file = new File(dir, "ynz.txt");
+        File dirs = new File("./folder/text");
+        System.out.println("" + dirs.mkdirs());
+        File file = new File(dirs, "ynz.txt");
         System.out.println("" + file.createNewFile());
 
     }

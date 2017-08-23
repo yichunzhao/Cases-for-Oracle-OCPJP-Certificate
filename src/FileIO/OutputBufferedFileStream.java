@@ -5,6 +5,7 @@
  */
 package FileIO;
 
+import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -16,24 +17,19 @@ import java.util.logging.Logger;
  *
  * @author YNZ
  */
-public class OutFileStream {
-
-    public static String copyRight = "// Copyright 2016\n" + "// All rights reserved\n" + "// ********************\n";
+public class OutputBufferedFileStream {
 
     public static void main(String[] args) throws FileNotFoundException {
         File dir = new File("./src/tmp");
         dir.mkdirs();
-
-        try {
-            File file = new File(dir, "hello.txt");
-            System.out.println("" + file.getAbsolutePath());
-            try (FileOutputStream fileOutputStream = new FileOutputStream(file)) {
-                fileOutputStream.write(copyRight.getBytes());
-            }
-
-        } catch (IOException ex) {
-            Logger.getLogger(OutFileStream.class.getName()).log(Level.SEVERE, null, ex);
+        File file = new File(dir, "ynz.txt");
+        FileOutputStream os = new FileOutputStream(file);
+        try(BufferedOutputStream bos = new BufferedOutputStream(os)){
+            bos.close();
+        } catch (IOException ex) { 
+            Logger.getLogger(OutputBufferedFileStream.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }
 
+    }
+    
 }

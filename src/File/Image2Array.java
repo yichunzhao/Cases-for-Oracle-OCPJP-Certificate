@@ -30,6 +30,7 @@ public class Image2Array {
                 imageArray = baos.toByteArray();
                 System.out.println("size of array " + imageArray.length);
                 baos.flush();
+                
             }
 
         } catch (IOException ex) {

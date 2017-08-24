@@ -5,13 +5,14 @@
  */
 package CollectionFun;
 
+import java.io.Serializable;
 import java.util.Objects;
 
 /**
  *
  * @author YNZ
  */
-public class Person implements Comparable<Person>{
+public class Person implements Comparable<Person>, Serializable{
 
     private String name;
     private int age;

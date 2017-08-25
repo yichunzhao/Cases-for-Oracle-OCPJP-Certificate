@@ -15,7 +15,7 @@ import java.io.IOException;
  * @author YNZ
  */
 public class BufferFileChar {
-    
+
     public static void main(String[] args) throws IOException {
         File file = new File("myFile.txt");
         FileWriter fileWriter = new FileWriter(file);
@@ -24,9 +24,6 @@ public class BufferFileChar {
             bufferedWriter.newLine();
             bufferedWriter.write("I have nothing to say");
             bufferedWriter.flush();
-            bufferedWriter.close();
         }
-        
     }
-    
 }

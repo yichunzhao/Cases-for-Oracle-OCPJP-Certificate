@@ -1,6 +1,6 @@
 /*
  * DataInputOutputStream and DataOutputStream
- * 
+ * Write and read primitive types and strings
  *  write and read primitive, char to and from a File. 
  */
 package FileIO;
@@ -28,6 +28,8 @@ public class DataInputOutputStream {
                 dos.writeInt(20);
                 dos.writeChar('k');
                 dos.writeFloat(20.1f);
+                dos.writeUTF(name);
+                dos.writeBoolean(true);
                 dos.flush();
             }
 
@@ -35,6 +37,8 @@ public class DataInputOutputStream {
                 System.out.println("" + dis.readInt());
                 System.out.println("" + dis.readChar());
                 System.out.println("" + dis.readFloat());
+                System.out.println("" + dis.readUTF());
+                System.out.println("" + dis.readBoolean());
             }
 
         } catch (FileNotFoundException ex) {

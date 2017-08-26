@@ -6,7 +6,6 @@
 package FileIO;
 
 import java.io.BufferedOutputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
@@ -15,7 +14,7 @@ import java.io.IOException;
  * @author YNZ
  */
 public class UsingIOStreams {
-    public static void main(String[] args) throws FileNotFoundException, IOException {
+    public static void main(String[] args) throws IOException {
         String talk = " I have something to speak out. ";
         FileOutputStream fos = new FileOutputStream("./src/tmp/hello.txt");
         try (BufferedOutputStream bos = new BufferedOutputStream(fos)) {

@@ -31,6 +31,7 @@ public class BufferedFileInputOutput {
             while ((data = bis.read()) != -1) {
                 bos.write(data);
             }
+            bos.flush();
             Long t1 = System.currentTimeMillis();
             System.out.println("p = " + (t1 - t0));
         }

@@ -26,6 +26,9 @@ public class ReverseString {
 
         String str1 = "ok";
         System.out.println("" + reverse(str1));
+        
+        StringBuilder sb = new StringBuilder(str);
+        System.out.println("" + sb.reverse());
 
     }
 

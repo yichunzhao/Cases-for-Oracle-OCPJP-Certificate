@@ -50,7 +50,8 @@ public class MayUseIterator {
         }
         
         System.out.println("++++++");
-        numbers.stream().forEach(n -> System.out.println(n));
+        numbers.stream().forEach(
+                n -> System.out.println(n));
         
         System.out.println("number is Iterable type? " + String.valueOf(numbers instanceof Iterable));
         

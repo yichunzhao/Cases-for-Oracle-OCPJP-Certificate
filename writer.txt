@@ -1,0 +1,2 @@
+using file writer to write into a file
+starte a new line

@@ -35,8 +35,6 @@ public class PasswordValidate {
         System.out.println(pwd4.matches(regx));
         System.out.println(pwd5.matches(regx));
         System.out.println(pwd6.matches(regx));
-        
-        
 
     }
 

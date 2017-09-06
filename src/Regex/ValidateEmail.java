@@ -28,11 +28,6 @@ public class ValidateEmail {
         
         String email5 = "1223@163.com";
         System.out.println("email1 is valid : " + email5.matches(regx));
-
-        
-
-        
-
     }
 
 }

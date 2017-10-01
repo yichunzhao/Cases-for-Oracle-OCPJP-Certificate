@@ -17,7 +17,8 @@ public class WrapperParser {
         double d = Double.parseDouble("20.32");
         long l = Long.parseLong("12356");
         
-        Long longInstance = Long.valueOf("12356");
+        Long instance = Long.valueOf("12356");
+        
 
     }
 

@@ -5,6 +5,9 @@
  */
 package Wrappers;
 
+import java.math.BigDecimal;
+import java.util.Objects;
+
 /**
  *
  * @author YNZ
@@ -15,9 +18,12 @@ public class CreateNumberInstance {
         Double a = Double.valueOf("2.3");
         Double b = Double.valueOf(2.3d);
 
-        if (a == b) {
+        if (Objects.equals(a, b)) {
             System.out.println("" + true);
         }
+        
+        BigDecimal bigA = BigDecimal.valueOf(a);
+        System.out.println("big a " + bigA);
 
     }
 }
